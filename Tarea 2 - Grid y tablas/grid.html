@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Vinculamos la guía de estilos externa al html-->
+    <link rel="stylesheet" href="grid.css">
+    <!--Título en la pestaña de la página-->
+    <title>Ejercicio 2 - Práctica UT2</title>
+</head>
+
+<body>
+    <!--Cabecero de la web-->
+    <div id="header">
+        <!--Título principal de la web-->
+        <h1>Diseño de Interfaces</h1>
+    </div>
+    <!--Estructura del grid-->
+    <div class="parent">
+        <!--Estructura del grid 1-->
+        <div class="div1">
+            <!--Estructura de una tabla con 1 fila y 5 columnas-->
+            <table>
+                <!--Fila de la tabla-->
+                <tr>
+                    <!--Contenido de las columnas/celdas de la tabla en 5 columnas -->
+                    <td>Inicio</td>
+                    <td>Contenido</td>
+                    <td>Imágenes</td>
+                    <td>Historias</td>
+                    <td>Contacto</td>
+                </tr>
+            </table>
+            <!--Estructura del grid 2-->
+        </div>
+        <div class="div2">
+            <!--Título h3 de la grid 2-->
+            <h3>modelo de cajas</h3>
+            <!--Texto que contiene la grid 2, dividido en varios para crear diferentes párrafos-->
+            <p>Es una de las características más importantes en las hojas de estilos. Cuando se crea una página en HTML,
+                el uso de cada etiqueta simula lo que podría considerarse una “caja”, dotando a cada una de ellas de un
+                identificador, indicado por el nombre de la etiqueta. Este sistema, nos permite, desde el fichero CSS,
+                seleccionar cada caja y dotarle del estilo deseado. </p>
+            <p>El uso de las guías de estilo con CSS permite modificar todas las características de cada una de las
+                cajas creadas.</p>
+            <p>Las propiedades principales con las que trabaja el modelo de cajas son “height” y “width” que harán
+                referencia a las dimensiones de la cada de contenido o content. En este caso, estamos hablando del alto
+                y el ancho del área donde se muestra el contenido de la caja.</p>
+            <p>Los márgenes tienen un comportamiento un tanto peculiar llamado “margin collapsing”. Cuando dos cajas se
+                tocan en un mismo diseño, la distancia entre ellas es el valor del margen más grande, y no la suma de
+                ambas.</p>
+        </div>
+        <!--Estructura del grid 3-->
+        <div class="div3">
+            <!--Título h3 de la grid 2-->
+            <h3>herencia de estilos</h3>
+            <!--Texto que contiene la grid 3, dividido en varios para crear diferentes párrafos-->
+            <p>Cuando hablamos de CSS, la herencia es el mecanismo mediante el cual determinadas propiedades de un
+                elemento “raíz o padre” se transmiten a sus “hijos”. No todas las propiedades CSS son heredables.</p>
+            <p>Los márgenes no se heredan porque es poco probable que un elemento “hijo” necesite los mismos márgenes
+                que su “padre”. Cuando se establece el valor de una propiedad CSS en un elemento, sus elementos
+                descendientes heredan de forma automática el valor de esa propiedad.</p>
+            <p>La simplicidad está dada por varios factores a tener en cuenta. El primer concepto importante es que los
+                elementos gráficos o textuales que componen la interfaz deben ser claros y de fácil identificación.</p>
+            <p>En cambio existen otras propiedades cuyo valor no se hereda, como el caso de los bordes (border), es
+                decir, si se define un estilo relativo al borde para el cuerpo, este no será aplicado al resto de
+                elementos HTML de la página o sitio web. En la Tabla 3 se resumen algunas propiedades que sí son
+                heredadas por defecto en los elementos HTML</p>
+        </div>
+        <!--Estructura del grid 4-->
+        <div class="div4">
+            <!--Título h3 de la grid 4-->
+            <h3>redes sociales</h3>
+            <!--Título h5, primer subtítulo, de la grid 4-->
+            <h5>twitter</h5>
+            <!--Texto que contiene la grid 4, el primer subtítulo, con clase redes-->
+            <p class="redes">El tamaño máximo para la escritura de mensajes
+                en Twitter es 140 carateres, ¿o no?
+                09:37 - 25/05/2021</p>
+            <!--Texto que contiene la grid 4, el primer subtítulo, con clase autor-->
+            <p class="autor">el pájaro</p>
+            <!--Título h5, segundo subtítulo, de la grid 4-->
+            <h5>facebook</h5>
+            <!--Texto que contiene la grid 4, el segundo subtítulo, con clase redes-->
+            <p class="redes">Facebook corre peligro por la fuga de datos privados
+                que se produjo en el año pasado.
+                10:37 - 07/12/2022</p>
+            <!--Texto que contiene la grid 4, el segundo subtítulo,  con clase autor-->
+            <p class="autor">el libro</p>
+        </div>
+        <!--Estructura del grid 5-->
+        <div class="div5">
+            <!--Título h3 de la grid 5-->
+            <h3>Cierre de guías de estilo</h3>
+            <!--Texto que contiene la grid 5, dividido en varios para crear diferentes párrafos-->
+            <p>CSS Grid layout es una tecnología para desarolladores web que contiene funciones de diseño. El CSS grid
+                se puede utilizar para lograr muchos diseños diferentes y destaca por permitir dividir una página en
+                áreas o regiones principipales, por definir la relación en términos de tamaño, posición y capas entre
+                partes de control construidas a partir de HTML</p>
+            <p>Al igual que ocurre con las tablas el Grid layout permite a un desarollador colocar contenido en filas y
+                columnas. Sin embargo, con CSS grid son posibles muchos más diseños atendiendo a una forma más sencilla
+                de diseñar el sitio web que haciendo uso de tablas. Por ejemplo, los elementos secundarios de un
+                contenedor de cuadrícula podrían posicionarse para que se solapen y se superpongan de forma similar a
+                los elementos proporcionados en CSS.</p>
+        </div>
+    </div>
+    <!--Pie de página de la web-->
+    <div id="footer">
+        <!--Texto del div id=footer, con clase autor, haciendo referencia al autor de la página-->
+        <p class="autor">José A. Sánchez - CIFP La Laboral</p>
+    </div>
+</body>
+
+</html>

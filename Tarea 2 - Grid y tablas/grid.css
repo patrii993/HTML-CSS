@@ -1,0 +1,129 @@
+/** Estilo del cuerpo de la página **/
+body{
+    background-color: #abcdef;
+    widows: 100%;
+}
+/** Estilo de la id de la cabecera, título principal **/
+#header{
+    font-style: italic;
+    text-align: center;
+    
+}
+/** Añade texto antes del h1 **/
+h1::before {
+    content: "Módulo:";
+    font-style: italic;
+    color: red;
+}
+/** Añade texto después del h1 **/
+h1::after{
+    content: "CSS Grid Layout";
+    font-style: italic;
+    color: red;
+    
+}
+/** Modificamos la primera letra de los h3 **/
+h3::first-letter{
+    color: red;
+    font-style: italic;
+    font-size: 2em;
+}
+/** Estilo del texto del párrafo **/
+p{
+    text-align: justify;
+    
+}
+/** Estilo del título h3 **/
+h3{
+    text-transform: capitalize;   
+}
+/** Estilo del título h5 **/
+h5{
+    text-transform: uppercase;
+}
+/** Estilo del texto de la clase redes **/
+p.redes{
+
+    text-align: right;
+    display: block;
+    font-style: italic;
+    white-space: pre-line;
+    padding: 10px;
+}
+
+
+/** Estilo del texto de la clase autor **/
+p.autor{
+    border-top: 1px dotted #bc548c;
+    text-transform: capitalize;
+    text-align: center;
+    color: #e07262;
+    font-style: italic;
+
+}
+/** Estilo de la tabla en el div1 **/
+.div1 > table{
+    display: table;
+    margin: auto;
+    text-align: center;
+    height: 10px;
+    border-spacing: 10px;
+    
+}
+/** Estilo del contenido de las columnas/celdas de la tabla **/
+td{
+   border-style:1px solid #eeeeee;
+   text-align: center;
+   align-content: center;
+   background-color: #eeeeee;
+   margin: auto;
+   padding-left: 5px;
+   padding-right: 5px;
+   color: #333333;
+
+}
+/** Pseudoclase que selecciona las columnas/celdas de la tabla dando propiedades al pasar el curso **/
+td:hover{
+   background-color:#333333;
+   color: #eeeeee;
+   border-color: #333333;
+
+}
+
+/** Clase del div del grid padre: tamaño y estructura **/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    }
+    /** Clase del div de la estructura del grid 1 **/
+    .div1 {
+        grid-area: 1 / 1 /1/8; 
+        border-bottom: 1px dotted  #bc548c;
+        border-top: 1px dotted  #bc548c ;
+        text-align: center;
+        padding: 25px;
+    
+    }
+    /** Clase del div de la estructura del grid 2**/
+    .div2 { 
+        grid-area: 2 / 1 / 2 / 3;
+        margin-left: 7px;
+    
+    }
+    /** Clase del div de la estructura del grid 3 **/
+    .div3 { 
+        grid-area: 2 / 3 / 2 / 5;
+    }
+    /** Clase del div de la estructura del grid 4**/
+    .div4 { 
+        grid-area: 2 / 5 / 2 /8; 
+        
+    }
+    /** Clase del div de la estructura del grid 5 **/
+    .div5 { 
+        grid-area: 5 / 1 / 3 / 8;
+        
+    }   

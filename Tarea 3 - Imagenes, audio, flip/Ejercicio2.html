@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Vinculamos la guía de estilos externa al html-->
+    <link rel="stylesheet" href="Guia-Ejercicio2.css" media="screen">
+    <!--Título en la pestaña de la página-->
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <!--Estructura de la grid para poder oganizar los videos y los audios de manera que quedase más limpio y uniforme-->
+    <div class="parent">
+        <!--Cabecero de la web abarcando la página-->
+        <div class="div1">
+            <h1>Web de vídeos - CIFP La Laboral</h1>
+        </div>
+        <!--Contiene el primer vídeo y la explicación del mismo-->
+        <div class="div2">
+            <!--Agrupa el título del vídeo y el enlace-->
+            <section>
+                <!--Título del vídeo-->
+                <h2>Vídeo 1</h2>
+                <!--Vídeo visible con controles y autorrepoducción-->
+                <video controls autoplay>
+                    <!--Enlace del vídeo-->
+                    <source src="Material/videos/video3.mp4" type="video/mp4">
+                </video>
+            </section>
+            <!--Etiqueta interactiva cerrada de la explicación-->
+            <details>
+                <!--Título que se le otorga a la etiqueta details, sino sería el de la etiqueta-->
+                <summary>Explicación Vídeo</summary>
+                <!--Texto contenedor de la etiqueta details, visible al darle click-->
+                <p>Vídeo de dibujo digital</p>
+            </details>
+        </div>
+        <!--Contiene el segundo vídeo y la explicación del mismo-->
+        <div class="div3">
+            <!--Agrupa el título del vídeo y el enlace-->
+            <section>
+                <!--Título del vídeo-->
+                <h2>Vídeo 2</h2>
+                <!--Vídeo visible con controles y autorrepoducción-->
+                <video controls autoplay>
+                    <!--Enlace del vídeo-->
+                    <source src="Material/videos/video4.mp4" type="video/mp4">
+                </video>
+            </section>
+            <!--Etiqueta interactiva cerrada de la explicación-->
+            <details>
+                <!--Título que se le otorga a la etiqueta details, sino sería el de la etiqueta-->
+                <summary>Explicación Vídeo</summary>
+                <!--Texto contenedor de la etiqueta details, visible al darle click-->
+                <p>Vídeo de dibujo digital</p>
+            </details>
+        </div>
+        <!--Contiene el tercer vídeo y la explicación del mismo-->
+        <div class="div4">
+            <!--Agrupa el título del vídeo y el enlace-->
+            <section>
+                <!--Título del vídeo-->
+                <h2>Vídeo 3</h2>
+                <!--Vídeo visible con controles y autorrepoducción-->
+                <video controls autoplay>
+                    <!--Enlace del vídeo-->
+                    <source src="Material/videos/video2.mp4" type="video/mp4">
+                </video>
+            </section>
+            <!--Etiqueta interactiva cerrada de la explicación-->
+            <details>
+                <!--Título que se le otorga a la etiqueta details, sino sería el de la etiqueta-->
+                <summary>Explicación Vídeo</summary>
+                <!--Texto contenedor de la etiqueta details, visible al darle click-->
+                <p>Vídeo de dibujo digital</p>
+            </details>
+        </div>
+        <!--Contiene el primer audio, la explicación del mismo y los enlaces de descarga de ambos (correspondientes a la columna)-->
+        <div class="div5">
+            <!--Título del audio-->
+            <h4>Reproducción Audio</h4>
+            <!--Enlace del audio, siendo visible con controles y autorreproducción-->
+            <audio src="Material/videos/video3.mp4" controls autoplay></audio>
+            <!--Etiqueta interactiva abierta de la explicación, visible directamente, puede ser cerrada al hacerle click-->
+            <details open>
+                <!--Título que se le otorga a la etiqueta details, sino sería el de la etiqueta-->
+                <summary>Explicación Audio</summary>
+                <!--Texto contenedor de la etiqueta details, visible directamente y puede ocultarse al hacer click-->
+                <p class="audio">Este es un audio de explicación de DIW</p>
+            </details>
+            <!--Enlaces de descarga, tanto del vídeo como del audio-->
+            <a class="video" href="Material/videos/video3.mp4">Descarga de video</a>
+            <a class="audio" href="Material/videos/video3.mp4">Descarga de audio</a>
+        </div>
+        <!--Contiene el segundo audio, la explicación del mismo y los enlaces de descarga de ambos (correspondientes a la columna)-->
+        <div class="div6">
+            <!--Título del audio-->
+            <h4>Reproducción Audio</h4>
+            <!--Enlace del audio, siendo visible con controles y autorreproducción-->
+            <audio src="Material/videos/video4.mp4" controls autoplay></audio>
+            <!--Etiqueta interactiva abierta de la explicación, visible directamente, puede ser cerrada al hacerle click-->
+            <details open>
+                <!--Título que se le otorga a la etiqueta details, sino sería el de la etiqueta-->
+                <summary>Explicación Audio</summary>
+                <!--Texto contenedor de la etiqueta details, visible directamente y puede ocultarse al hacer click-->
+                <p class="audio">Este es un audio de explicación de DIW</p>
+            </details>
+            <!--Enlaces de descarga, tanto del vídeo como del audio-->
+            <a class="video" href="Material/videos/video4.mp4">Descarga de video</a>
+            <a class="audio" href="Material/videos/video4.mp4">Descarga de audio</a>
+        </div>
+        <!--Contiene el tercer audio, la explicación del mismo y los enlaces de descarga de ambos (correspondientes a la columna)-->
+        <div class="div7">
+            <!--Título del audio-->
+            <h4>Reproducción Audio</h4>
+            <!--Enlace del audio, siendo visible con controles y autorreproducción-->
+            <audio src="Material/videos/video2.mp4" controls autoplay></audio>
+            <!--Etiqueta interactiva abierta de la explicación, visible directamente, puede ser cerrada al hacerle click-->
+            <details open>
+                <!--Título que se le otorga a la etiqueta details, sino sería el de la etiqueta-->
+                <summary>Explicación Audio</summary>
+                <!--Texto contenedor de la etiqueta details, visible directamente y puede ocultarse al hacer click-->
+                <p class="audio">Este es un audio de explicación de DIW</p>
+            </details>
+            <!--Enlaces de descarga, tanto del vídeo como del audio-->
+            <a class="video" href="Material/videos/video2.mp4">Descarga de video</a>
+            <a class="audio" href="Material/videos/video2.mp4">Descarga de audio</a>
+        </div>
+    </div>
+</body>
+
+</html>

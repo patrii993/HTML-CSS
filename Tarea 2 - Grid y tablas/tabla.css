@@ -1,0 +1,75 @@
+/** Estilo del cuerpo de la página **/
+body{
+    widows: 100%;
+}
+/** Estilo del título y encabezado**/
+header, h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    text-transform: capitalize;
+    text-indent: 50px;
+   
+}
+
+/** Pseudo elemento que selecciona la primera letra del texto del titulo principal **/
+h1::first-letter{
+    color: red;
+    font-style: italic;
+    font-size: 2em;
+
+}
+
+/** Estilo del apartado articulo **/
+article{
+    margin: auto;
+    display: table;
+    padding: 7em;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/** Estilos de los encabezados de la tabla **/
+th{
+    border: 1px solid black;
+    text-align: center;
+    background-color:#F0F0F0;
+    padding:7px;
+    color: #333333;
+}
+
+/** Estilos del contenido de las columnas/celdas de la tabla **/
+td{
+    border:1px solid black;
+    text-align: center;
+}
+
+
+/** Pseudoclase que selecciona las filas impares de la tabla cambiamos el color **/
+tr:nth-child(odd){
+    background-color: #eeeeee;
+}
+
+/** Pseudoclase que selecciona las filas impares de la tabla cuando pasas el cursos cambia de color **/
+tr:nth-child(odd):hover{
+    background-color: #00FF00;
+}
+
+/** Pseudoclase que selecciona las filas pares de la tabla cambiamos el color **/
+tr:nth-child(even){
+    background-color:  #FFFF00; 
+}
+
+/** Pseudoclase que selecciona las filas pares de la tabla cuando pasas el cursos cambia de color **/
+tr:nth-child(even):hover{
+    background-color: red;
+}
+
+/** Estilo del autor del pie de página **/
+footer > address{ 
+    color: #FF00FF;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    text-indent: -390px;
+}

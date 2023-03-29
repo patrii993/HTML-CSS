@@ -1,0 +1,116 @@
+/** Estilo del cuerpo de la página **/
+body{
+    background-image: url(Material/imagenes/fondoEJ2.jpeg);
+}
+/** Estilo de los vídeos **/
+video{
+    height: 220px;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+}
+/** Estilo del título principal **/
+h1{
+    border: 2px solid red;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+}
+/** Estilo de los títulos de los vídeos**/
+h2{
+    color: green;
+
+}
+
+/** Estilo de los audios **/
+audio{
+    width: 100%;
+    max-width: 100%;
+    height: auto;    
+}
+
+/** Estilo de los títulos audios**/
+h4{
+    margin: auto;
+}
+
+/** Estilo de los títulos de las explicaciones (tanto audios como videos)**/
+summary{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/** Estilo del texto de las explicaciones **/
+p{
+    background-color:purple;
+    color: white;
+    font-size: 14px;
+}
+/** Estilo del texto de las explicaciones de los audios**/
+p.audio{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+/** Estilo del enlace de descarga de los audios **/
+a.audio{
+    display: block;
+    text-align: right;
+}
+/** Estilo del enlace de descarga de los vídeos **/
+a.video{
+    text-align: left;
+}
+/** Estilo del enlace de descarga visitados **/
+a.audio:visited{
+    color: purple;
+}
+/** Estilo del enlace de descarga **/
+a:link{
+    color: darkblue;
+}
+/** Estilo del enlace de descarga activado **/
+a.audio:active{
+    color:darkred;
+}
+/** Estilo del enlace de descarga al pasar por encima el ratón **/
+a:hover{
+    color:rgb(255, 136, 0);
+}
+/** Estilo del grid**/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 5px;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 1 / 4; 
+    }
+    .div2 { 
+        grid-area: 2 / 1 / 3 / 2;
+        display: block;
+     }
+    .div3 { 
+        grid-area: 2 / 2 / 3 / 3;
+        display: block;
+     }
+    .div4 {
+         grid-area: 2 / 3 / 3 / 4;
+         display: block;
+     }
+    .div5 { 
+        grid-area: 3 / 1 / 4 / 2;
+     }
+    .div6 { 
+        grid-area: 3 / 2 / 4 / 3;
+       
+     }
+    .div7 { 
+        grid-area: 3 / 3 / 4 / 4; 
+       
+    }

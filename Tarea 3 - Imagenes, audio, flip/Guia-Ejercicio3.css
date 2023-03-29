@@ -1,0 +1,186 @@
+/** Estilo del cuerpo de la página **/
+body{
+    background-image: url(Material/imagenes/La-Laboral.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    widows: 100%;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/** Estilo de la grid del front: composión y estructura de cada bloque **/
+.front{
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .bloque1 { 
+        grid-area:  1 / 1 / 3 / 2; 
+        margin: auto; 
+        max-width: 100%;
+        margin-bottom: -80px;
+    }
+    .bloque2 { 
+        grid-area: 1 / 2 / 3 / 4;
+        background-color: rgba(153, 50, 204, 0.541); 
+        margin: auto;
+        max-width: 100%;
+        margin-right: 15px;
+        margin-bottom: -65px;
+    }
+    .bloque3 { 
+        grid-area: 3 / 1 / 5 / 2;
+        margin: auto; 
+        max-width: 100%;
+        margin-top: -166px;
+    }
+    .bloque4 { grid-area: 3 / 2 / 5 / 4; 
+        background-color: rgba(153, 50, 204, 0.541); 
+        margin: auto;
+        max-width: 100%;
+        margin-right: 15px;
+        margin-top: -155px;
+    } 
+    
+/** Estilo de la grid del back: composión y estructura de cada bloque  **/
+.back {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { 
+        grid-area: 1 /1 / 3 / 4;
+        margin: auto;
+        max-width: 100%;
+     }
+
+    .div2 { 
+        grid-area: 3 / 1 / 5 / 4;
+        max-width: 100%; 
+        margin: auto;
+        margin-top: -160px;    
+    }
+
+
+/** Estilo de las imagenes y video en común **/
+img,video{
+    border-radius: 3%;
+    box-shadow: 5px 5px 10px #ffffffa4;
+    max-width: 100%;
+    align-content: center;  
+}
+
+ /** Estilo de la grid del bloque contenedor de la imagen y el texto, para poder centrarlas y organizarlas **/
+figure{
+     float: left;  
+}
+
+/** Estilo de los h3 **/
+h3{
+    background-color: white;
+    color: orange;
+    border-style: 1px solid orange;
+    text-align: center;
+    box-shadow: 0px 0px 10px #ffffffcc;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/** Estilo de los h4 **/
+h4{
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+    border-bottom: 1px dotted white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/** Estilo de los textos informativos **/
+p{
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+/** Estilo de los títulos de las imagenes visible **/
+figcaption{
+    color: white;
+    text-align: center;
+    border-bottom: 1px dotted white;
+    align-content: center;
+}
+
+/** Estilo del video **/
+video{
+    height: 250px;
+    width: 470px;
+    max-width: 100%;
+    display: block;
+    margin-top: -105px;
+}
+
+/** Estilo de la parte trasera del flip **/
+.flip3D > .back{
+    position: absolute;
+    max-width: 100%;
+    transform: perspective( 600px ) rotateY( 180deg );
+    transition: transform .5s linear 0.5s;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.425);
+    border: 1px solid white;
+    border-radius: 2%;
+}
+
+/** Estilo de la parte delantera del flip **/
+.flip3D > .front{
+    position: absolute;
+    max-width: 100%;
+    transform: perspective( 600px ) rotateY( 0deg );
+    transition: transform .5s linear 0.5s;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.425);
+    border: 1px solid white;
+    border-radius: 2%;
+}
+
+/** Estilo del flip **/
+div.flip3D{
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+    transform-style: preserve-3d; 
+    width: 600px;
+    height:280px;
+    display: grid;
+    margin-top: 20px;
+}
+
+/** Estilo de la parte delantera del flip al poner el ratón encima, en este caso la transformación y la rotación **/
+.flip3D:hover > .front {
+    transform: perspective( 600px ) rotateY( -180deg );
+}
+
+/** Estilo de la parte trasera del flip al poner el ratón encima, en este caso la transformación y la rotación **/
+.flip3D:hover > .back {
+    transform: perspective( 600px ) rotateY( 0deg );
+}
+
+

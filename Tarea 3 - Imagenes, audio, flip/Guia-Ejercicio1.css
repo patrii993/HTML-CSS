@@ -1,0 +1,104 @@
+/** Estilo del cuerpo de la página **/
+body{
+    widows: 100%;
+    align-content: center;
+}
+
+/** Estilo del cabecero de la página **/
+/**Animación del mismo en tamaño con sus posteriores reglas**/
+h1{
+    border: 1px solid red;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    animation: GRh1 5s linear; 
+    margin: auto;
+    
+}  
+/** Reglas para controlar la animación del título**/
+/** Siendo al inicio tamaño de 40 px y el siguiente paso cambia a 50px luego volviendo al inicio**/
+@keyframes GRh1 {
+    0%{
+        font-size: 40px;
+    }
+    50%{
+        font-size: 50px;
+
+    }
+}
+
+/** Estilo del cabecero al pasar el ratón por encima**/
+h1:hover {
+    color:green;
+    border: 1px solid green;
+    transition: color 3s linear;
+}
+
+/** Estilo de las imagenes de la página **/
+img{  
+    width:100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+/** Estilo del grid de la página, de la galería de las imágenes**/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 1 / 9; 
+        white-space: pre-line;
+    }
+    .div2 { 
+        grid-area: 2 / 1 / 2 / 3;
+        
+    }
+    .div3 { 
+        grid-area: 2 / 3 / 2 / 5;
+         
+    }
+    .div4 { 
+        grid-area: 2 / 5 / 2 / 7; 
+        
+    }
+    .div5 { 
+        grid-area: 2 / 7 / 2 / 9; 
+        
+    }
+    .div6 { 
+        grid-area: 3 / 1 / 3 / 3; 
+       
+    }
+    .div7 {
+        grid-area: 3 / 3 / 3 / 5;
+      
+    }
+    .div8 { 
+        grid-area: 3 / 5 / 3/ 7; 
+       
+    }
+    .div9 { 
+        grid-area: 3 / 7 / 3 / 9;
+        
+    }
+    .div10 { 
+        grid-area: 4 / 1 / 4 / 3;
+       
+    }
+    .div11 { 
+        grid-area: 4 / 3 / 4 / 5; 
+       
+    }
+    .div12 { 
+        grid-area: 4 / 5 / 4/ 7; 
+       
+    }
+    .div13 { 
+        grid-area: 4 / 7 / 4 / 9;
+    }

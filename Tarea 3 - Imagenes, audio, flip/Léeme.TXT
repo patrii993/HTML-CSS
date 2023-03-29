@@ -1,0 +1,52 @@
+Patricia Fernández Sánchez - DNI 53508857R
+
+Entrega Práctica UT3
+
+Práctica que consta de 3 ejercicios independientes.
+
+Ejercicio 1:
+
+Consiste en crear un web de una galeria de imágenes determinada y un estilo definido con dos animaciones.
+La web se compone de un titulo principal central y una galería de imágenes con una cuadrícula de 4*3 imágenes.
+Para el título y la galería creamos una grid para la ubicación y correcta colocación y distribución de las imágenes.
+El título principal se compone de dos animaciones:
+  -1) Cambio de color al pasar el ratón: de rojo a verde de manera lineal en un tiempo de 3s
+  -2) Cambio de tamaño: al entrar en la página web, aumentando el tamaño de 40px a 50px, en un tiempo de 5s y volviendo a su forma principal (40px)
+El diseño de la web abarca el 100% de la web adaptandose a ella si la ventana disminuye de tamaño, las imagenes disminuyen en armonía.
+Las imágenes abarca el espacio del grid correspondiente, consiguiendo asi que todas tengan el mismo tamaño. 
+las imágenes son gratis sacadas de pixebay.com cuya licencia permite el uso deliberado de las mismas.
+
+Ejercicio 2:
+
+Consiste en crear una web de videos y audios con qtiquetas interactivas y enlaces de descarga
+La web se compone de un título principal, los titulos de los respectivos videos, los vídeos, una explicación de cada vídeo, los títulos de los audios, los audios, una explicación de cada audio y los enlaces de descarga cada uno de ellos.
+Para la distribución y la correcta colocación de los elementos se crea una grid tres filas, la primera la del titulo, la segunda distribuida en tres columnas en las que irán los vídeos y la tercera los audios y los enlaces de descarga.
+Los videos se introducen a través de un enlace, tendrán los controles visibles para su uso y se autorrepoducirán automaticamente.
+La explicacion de los vídeos será la etiqueta cerrada, es decir no visible a no ser que se le haga click.
+Los audios se introducen a través de un enlace, tendrán los controles visibles para su uso y se autorrepoducirán automaticamente.
+La explicación de los audios será una etiqueta abierta, es decir directamente visible pudiendo ocultarse el contenido al hacerle click.
+Los enlaces de descarga estarán enlazados con sus correspondientes archivos, cambio su estado según si son visitados, si son activados, si se pasa el ratón o si directamente el color principal sin ninguna acción. (Los vídeos y los audios son los mismos, así que al hacer click en un enlace (video o audio) se ve lo mismo en el contrario y viceversa).
+Los vídeos y los audios abaracarán de manera uniforme el espacio correspondiente del grid, quedando así todos los elementos del mismo tamaño.
+El diseño de la web abarca el 100% de la web adaptandose a ella si la ventana disminuye de tamaño, los vídeos y audios disminuyen en armonía.
+El fondo de la web es una imagen previamente tratada para convertirla en "marca de agua" pudiendo visualizar perfectamente el contenido.
+
+
+Ejercico 3:
+
+Consiste en crear una web con dos flips centrados y ubicados uno debajo de otro, con contenido en la parte frontal y trasera viéndose únicamente la cara visible. Los flips tienen una animacion de giro vertical de 180 grados cuando se sitúa el cursor/ratón encima, mostrando así la parte trasera.
+La web se compone de imágenes, sus respectivos títulos a cada imágen, texto explicativo y un video.
+Para la ubicación de los elementos y correcta distrubición creamos dos grids, uno para la parte frontal y otro para la parte trasera.
+La parte frontal se compone de 4 bloques, distribuidos en dos filas, para componer las dos partes frontales
+El bloque 1 y bloque 2 compone el primer flip. El bloque1 es la imagen y el bloque2 es los titulos, h3 y h4 y el texto informativo, p. El bloque2 el texto será blanco, centrado y de fondo violeta con cierta transparencia de color.
+El bloque 3 y bloque 4 compone el segundo flip. El bloque3 es la imagen y el bloque4 es los titulos, h3 y h4 y el texto informativo, p. El bloque3 el texto será blanco, centrado y de fondo violeta con cierta transparencia de color.
+La parte traser se compone de dos bloques que componen cada uno el back de cada flip. 
+El bloque uno, div1, conforma el titulo principal, las tres imágenes, centradas y distribuidas uniformente en fila, y debajo de cada una de ellas el título de la imagen correspondiente.
+El bloque dos, div2, se compone de un vídeo centrado.
+Las imágenes, el título h3 y el vídeo tiene una sombra hacia la derecha blanca con cierta transparencia de color.
+Las imágenes, el vídeo y los flips tendrán los bordes redondeados.
+El flip tendrá un borde visible.
+La animación de los flips será independiente, es decir, si ponemos el curso encima del primer flip girará con una perspectiva de 600px y mostrando la cara que está oculta y ocultando la visible, mientras que el otro flip no mostrará ninguna transformación. La transformación es de 0.5s lineal. 
+El fondo de los flips es negro con cierto transparencia de color.
+El fondo de la web es una imagen completa y centrada que abarca la totalidad de la web sin repetirse.
+
+
